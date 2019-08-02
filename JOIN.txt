@@ -1,0 +1,63 @@
++++JOIN+++
+
+1.INNER JOIN
+2.LEFT JOIN
+3.RIGHT JOIN
+4.OUTER JOIN
+5.LEFT JOIN EXCLUDING INNER JOIN
+6.RIGHT JOIN EXCLUDING INNER JOIN
+7.OUTER JOIN EXCULDING INNER JOIN
+
+==============================================
+INNER JOIN
+------------------------------------------
+SELECT <select_list>
+FROM TABLE_A A
+INNER JOIN Table_B B
+ON A.Key = B.Key
+==============================================
+LEFT JOIN
+-------------------------------------------
+SELECT <select_list>
+FROM Table_A A
+LEFT JOIN Table_B B
+ON A.Key = B.Key
+==============================================
+RIGHT JOIN
+-------------------------------------------
+SELECT <select_list>
+FROM Table_A A
+RIGHT JOIN Table_B B
+ON A.Key = B.Key
+==============================================
+OUTER JOIN
+-------------------------------------------
+SELECT <select_list>
+FROM table_A A
+FULL OUTER JOIN Table_B B
+ON A.Key = B.Key
+===============================================
+Lefy Excluding JOIN
+-------------------------------------------
+SELECT <select_list>
+FROM Table_A A
+LEFT JOIN Table_B B
+ON A.Key = B.Key
+WHERE B.Key IS NULL
+===============================================
+RIGHT Excluding JOIN
+--------------------------------------------
+SELECT<select_list>
+FROM Table_A A
+RIGHT JOIN Table_B B
+ON A.Key =B.Key
+WHERE A.Key IS NULL;
+================================================
+Outer Excluding JOIN
+---------------------------------------------
+SELECT <select_list>
+FROM Table_A A
+FULL OUTER JOIN Table_B B
+ON A.Key = B.Key
+WHERE A.key IS NULL OR B.Key IS NULL;
+================================================
